@@ -1,0 +1,3 @@
+<?php
+
+Database::query("DELETE FROM PROGRAM_CONFIG WHERE TITLE = 'ENABLE_USER_PERMISSION' AND PROGRAM != 'system'");

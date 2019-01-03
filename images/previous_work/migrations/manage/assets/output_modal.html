@@ -1,0 +1,9 @@
+<script type="text/x-handlebars-template" data-name="output_modal">
+	<div class="modal-contents">
+		<h1>Output Text</h1>
+		<pre class="output-text">{{#if text}}{{text}}{{else}}(Empty){{/if}}</pre>
+		<h1>SQL Log</h1>
+		<div class="output-sql">{{#if sql}}{{{sql}}}{{else}}(Empty){{/if}}</div>
+		<button class="close-button">Close</button>
+	</div>
+</script>

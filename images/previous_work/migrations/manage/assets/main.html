@@ -1,0 +1,55 @@
+<script type="text/x-handlebars-template" data-name="main">
+	<div class="content">
+		<div class="progress">
+			<div class="progress-inner"></div>
+			<div class="progress-text"></div>
+		</div>
+		<div class="ani-spinner hidden">
+			<div class="ani-double-bounce1"></div>
+			<div class="ani-double-bounce2"></div>
+		</div>
+		<div class="controls">
+			<div class="migration-filters">
+				<input class="migrations-filter" type="text" placeholder="Filter Migrations...">
+			</div>
+			<div class="migration-types">
+				<label>
+					<input class="show-pending" type="checkbox" checked>
+					Show Pending Migrations
+				</label>
+				<label>
+					<input class="show-completed" type="checkbox">
+					Show Completed Migrations
+				</label>
+			</div>
+			<div class="current-migration hidden">
+				Applying <span class="jira-link"></span>
+				<div class="sk-three-bounce">
+					<div class="sk-child sk-bounce1"></div>
+					<div class="sk-child sk-bounce2"></div>
+					<div class="sk-child sk-bounce3"></div>
+				</div>
+			</div>
+			<button class="run-migrations" title="Click to run all incomplete migrations">Run Migrations</button>
+			<button class="stop-migrations hidden" title="Click to stop running migrations">Stop Migrations</button>
+		</div>
+		<div class="migrations-container">
+			<table class="migrations-table">
+				<thead>
+					<tr>
+						<th data-sort-key="migration_id">Migration ID</th>
+						<th data-sort-key="date">Date</th>
+						<th data-sort-key="time">Time</th>
+						<th data-sort-key="svn_url">SVN URL</th>
+						<th data-sort-key="svn_date">SVN Date</th>
+						<th data-sort-key="svn_revision">SVN Revision</th>
+						<th>Output</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</script>

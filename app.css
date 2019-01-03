@@ -1,0 +1,122 @@
+#linkedInProfileIcon {
+	position: absolute;
+	margin-left: 46.5%;
+	border-radius: 50%;
+	width: 128px;
+	height: 128px;
+	border-width: 5px;
+	border-style: solid !important;
+	border-color: white !important;
+	box-shadow: 0px 2px 3px black;
+}
+
+@media screen and (max-width: 1215px) {
+	#linkedInProfileIcon {
+		margin-left: 44%;
+	}	
+}
+
+#jobTitle {
+	font-weight: bolder;
+	color: #fff;
+	letter-spacing: 1.5px;
+}
+
+#name {
+	font-weight: bolder;
+	color: #fff;
+}
+
+.tableImageViewerViewButton {
+	margin-bottom: 5px !important;
+	margin-top: 5px !important;
+}
+
+.iv-image-view {
+	width: 80% !important;
+}
+
+.tableImageViewerColumn {
+	padding-left: 2.5% !important;
+	vertical-align: top;
+	width: 33%;
+}
+
+.tableImageViewerTable {
+	margin-top: 2.5%;
+}
+
+.columnHeader {
+	margin-bottom: 10px !important;
+}
+
+#profileDiv {
+	height: 90px;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	background: #005C97;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.ui.secondary.pointing.menu {
+	margin-top: 5px;
+}
+
+.headerItem {
+	background-color: #3b83c0;
+	padding: 5px;
+	border-radius: .2857rem;
+	text-align: center;
+	color: white;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+#contactList.ui.horizontal.list {
+	text-align: center;
+	display: block;
+}
+
+#contactList.ui.horizontal.list .header {
+	text-align: left;
+}
+
+#contactMessageContainer {
+	width: 100%;
+	padding: 20px;
+	height: 250px;
+}
+
+#contact {
+	height: 450px;
+}
+
+.ui.image {
+	width: 50px;
+	height: 50px;
+}
+
+.item .icon {
+	font-size: 3em;
+}
+
+.content.cert {
+	padding-left: 1.2em !important;
+}
+
+.item .ui.image.first {
+	margin-left: 1em;
+}
+
+.item .certificate {
+	padding-left: 8px;
+}
+
+.page:not(.modals) {
+	width: 80%;
+	margin-left: 10% !important;
+}

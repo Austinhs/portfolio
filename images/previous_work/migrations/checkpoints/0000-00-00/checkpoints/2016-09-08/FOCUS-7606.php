@@ -1,0 +1,2 @@
+<?php
+Database::query("INSERT INTO importer_templates (name, type, settings) VALUES ('Schools', 'main', '{\"destinationTable\":\"schools\",\"temporaryTable\":\"schoolsTempImporter\",\"errorTable\":\"schoolsTempImporter_error\",\"primaryKeys\":[],\"identityColumn\":\"none\"}');");

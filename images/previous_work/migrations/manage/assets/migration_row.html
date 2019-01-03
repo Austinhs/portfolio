@@ -1,0 +1,23 @@
+<script type="text/x-handlebars-template" data-name="migration_row">
+	<tr class="{{#if _hide}}hidden{{/if}}{{#if deleted}} deleted{{/if}}" data-migration-id="{{migration_id}}">
+		<td class="{{#if _highlight.migration_id}}highlighted{{/if}}"><a target="_blank" href="https://focussis.atlassian.net/browse/{{jira_id}}">{{migration_id}}</a></td>
+		<td class="{{#if _highlight.date}}highlighted{{/if}}">{{date}}</td>
+		<td class="{{#if _highlight.time}}highlighted{{/if}}">{{#if _time}}{{_time}} Seconds{{/if}}</td>
+		<td class="{{#if _highlight.svn_url}}highlighted{{/if}}">{{svn_url}}</td>
+		<td class="{{#if _highlight.svn_date}}highlighted{{/if}}">{{svn_date}}</td>
+		<td class="{{#if _highlight.svn_revision}}highlighted{{/if}}">{{svn_revision}}</td>
+		<td class="{{#if _highlight.output}}highlighted{{/if}}">
+			{{#if id}}
+				<button class="view-output" title="View the output for this migration">View Output</button>
+				<span class="migration-output">{{output}}</span>
+			{{/if}}
+		</td>
+		<td>
+			{{#if id}}
+				{{#unless deleted}}
+					<button class="delete-button" title="Delete the migration record" data-id="{{id}}">Delete</button>
+				{{/unless}}
+			{{/if}}
+		</td>
+	</tr>
+</script>

@@ -1,0 +1,2 @@
+<?php
+CustomFieldJoinCategory::fixSortOrders();

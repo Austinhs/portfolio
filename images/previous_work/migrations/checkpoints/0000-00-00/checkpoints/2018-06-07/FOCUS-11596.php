@@ -1,0 +1,2 @@
+<?php
+Database::query("DELETE FROM PROGRAM_CONFIG WHERE TITLE = 'SCHED_PERMISSIONS' AND PROGRAM != 'system'");
